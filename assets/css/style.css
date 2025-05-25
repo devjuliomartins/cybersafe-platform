@@ -292,7 +292,7 @@ main .conteudo-artigo p {
     height: 290px;
     border-radius: 12px;
     overflow: hidden;
-    background-color: #8c52ff;
+    background: linear-gradient(90deg,#3533cd, #cb6ce6);
     transition: transform 0.3s ease, box-shadow 0.1s ease;
 }
 
@@ -351,13 +351,15 @@ main .conteudo-artigo p {
 }
 
 .lista-servicos .button-servico {
-    background-color: #8c52ff;
+    background: linear-gradient(90deg, #cb6ce6, #5e17eb);
     color: #fff;
-    width: 22%;
-    height: 40px;
+    width: 20%;
+    height: 35px;
     border-radius: 50px;
     margin-top: 40px;
     cursor: pointer;
+    border: none;
+    font-size: 12px;
 }
 
 .lista-servicos .button-servico:hover {
