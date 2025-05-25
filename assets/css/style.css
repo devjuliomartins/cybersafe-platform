@@ -211,7 +211,7 @@ header .img-perfil {
 
 /* linha que separa o hero da main */
 
-.hero .linha-separadora {
+.linha-separadora {
     display: flex;
     align-items: center;
     width: 64%;
@@ -329,7 +329,7 @@ main .conteudo-artigo p {
     flex-direction: column;
     padding: 20px;
     justify-content: center;
-    max-width: 1200px;
+    max-width: 1255px;
 }
 
 .lista-servicos .linha-separadora {
@@ -338,7 +338,6 @@ main .conteudo-artigo p {
     width: 100%;
     margin: 20px auto;
     gap: 20px;
-    font-size: 12px;
 }
 
 .lista-servicos li{
@@ -360,6 +359,7 @@ main .conteudo-artigo p {
     cursor: pointer;
     border: none;
     font-size: 12px;
+    margin-bottom: 30px;
 }
 
 .lista-servicos .button-servico:hover {
