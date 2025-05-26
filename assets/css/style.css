@@ -201,7 +201,6 @@ header .img-perfil {
 
 .hero .noticia-lateral a {
     color: #fff;
-    bottom: 100px;
     position: absolute;
     bottom: 25px;
     left: 30px;
@@ -211,7 +210,7 @@ header .img-perfil {
 
 /* linha que separa o hero da main */
 
-.hero .linha-separadora {
+.linha-separadora {
     display: flex;
     align-items: center;
     width: 64%;
@@ -232,16 +231,12 @@ header .img-perfil {
 
 /* Corpo da pagina */
 
-main {
-    margin-left: 320px;
-}
-
 main .container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 40px; 
     padding-top: 40px;
-    justify-content: center;
 }
 
 main .artigo {
@@ -329,7 +324,7 @@ main .conteudo-artigo p {
     flex-direction: column;
     padding: 20px;
     justify-content: center;
-    max-width: 1200px;
+    max-width: 1255px;
 }
 
 .lista-servicos .linha-separadora {
@@ -338,7 +333,6 @@ main .conteudo-artigo p {
     width: 100%;
     margin: 20px auto;
     gap: 20px;
-    font-size: 12px;
 }
 
 .lista-servicos li{
@@ -347,7 +341,7 @@ main .conteudo-artigo p {
 
 .lista-servicos .descricao {
     margin-left: 5px;
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .lista-servicos .button-servico {
@@ -360,6 +354,7 @@ main .conteudo-artigo p {
     cursor: pointer;
     border: none;
     font-size: 12px;
+    margin-bottom: 30px;
 }
 
 .lista-servicos .button-servico:hover {
@@ -379,11 +374,74 @@ main .conteudo-artigo p {
         display: none;
     }
 
-    header .logo {
+    header .menuMobile {
         display: flex;
     }
 
-    header .menuMobile {
+    /* home */
+
+    main .container {
+        max-width: 10%;
+    }
+
+    main .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px; 
+    padding-top: 40px;
+    }
+
+    main .artigo {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    }
+
+    main .conteudo-artigo {
+        max-width: 100px;
+    }
+    main .container {
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px; 
+        padding-top: 40px;
+    }
+
+    main .conteudo-artigo {
+        width: 700px;
+        overflow-wrap: break-word;
+    }
+
+    main .conteudo-artigo p {
+        margin-top: 5px;
+        font-family: 'Arapey', sans-serif;
+    }
+
+    main .conteudo-artigo p {
+        margin-top: 5px;
+        font-family: 'Arapey', sans-serif;
+    }
+
+    /* Cursos */
+
+    .lista-cursos .curso a {
+        width: 40%;
+        flex-grow: 1;
+        max-width: 150px;
+    }
+
+    /* Servicos */
+
+    .lista-servicos .button-servico {
+        width: 100%;
+    }
+
+    /* Linha separadora */
+
+    .linha-separadora {
+        width: 90%;
     }
 }
