@@ -363,9 +363,68 @@ main .conteudo-artigo p {
     opacity: 0.8;
 }
 
-/*  */
+/* Sobre */
+
+.sobre-cybersafe .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 64%;
+    padding: 20px;
+}
+
+.sobre-cybersafe h2, h3, ul, li, strong, p {
+    font-family: 'Arapey', sans-serif;
+    font-size: 18px;
+        letter-spacing: 0.3px;
+}
+
+.sobre-cybersafe li {
+    list-style:circle;
+    margin: auto 40px;
+}
+
+.sobre-cybersafe h2 {
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
+    font-size: 22px;
+}
 
 
+/* FOOTER */
+
+footer {
+    color: #ffffff;
+    margin-top: 13%;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 40px;
+}
+
+footer .contato {
+    font-size: 16px;
+}
+
+footer .copyrights {
+    font-size: 12px;
+}
+
+footer .copyrights a {
+    color: #8c52ff;
+    text-decoration: none;
+}
+
+
+footer .copyrights a:hover,
+.contato a:hover {
+    text-decoration: underline;
+}
 
 /* Responsividade para cell */
 
@@ -443,5 +502,17 @@ main .conteudo-artigo p {
 
     .linha-separadora {
         width: 90%;
+    }
+
+    /* Sobre */
+
+    .sobre-cybersafe .container {
+        max-width: 90%;
+    }
+
+    /* Footer */
+
+    footer .container {
+        text-align: center;
     }
 }
