@@ -46,6 +46,7 @@ header nav {
     display: flex;
     align-items: center;
     font-size: 18px;
+    justify-content: space-between;
 }
 
 header nav .menu {
