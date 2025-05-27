@@ -38,7 +38,6 @@ header .logo {
     width: 40px;
     height: 32px;
     display: flex;
-    justify-content: space-between;
     cursor: pointer;
 }
 
@@ -68,12 +67,11 @@ header nav li a:hover {
 
 header .menuMobile {
     display: none;
-    flex: 1;
-    justify-content: flex-end;
 }
 
 
 header .menu-icon div {
+    width: 20px;
     height: 6px;
     background-color: #fff;
     border-radius: 2px;
@@ -84,7 +82,6 @@ header .img-perfil {
     width: 40px;
     height: 40px;
     display: flex;
-    justify-content: space-between;
     cursor: pointer;
 }
 
@@ -158,30 +155,9 @@ header .img-perfil {
 /* Barrarinhas que conta paginas */
 
 .hero .indicadores-tracos {
-    margin-left: -270px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    margin-top: 20px;
+    display: none;
 }
 
-.hero .indicadores-tracos .traco {
-
-    max-width: 2%;
-    height: 4px;
-    background-color: #555;
-    border-radius: 2px;
-    transition: background-color 0.3s ease;
-}
-
-.hero .indicadores-tracos .traco.ativo {
-     background-color: #999;
-}
-
-.hero .traco {
-    flex: 1;
-}
 
 /*  */
 
@@ -231,34 +207,34 @@ header .img-perfil {
 
 /* Corpo da pagina */
 
-main .container {
+.conteudo-principal .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 40px; 
-    padding-top: 40px;
+    padding-top: 20px;
+    
 }
 
-main .artigo {
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
-  align-items: center;
+.conteudo-principal .artigo {
+    display: flex;
+    gap: 40px;
+    align-items: center;
 }
 
-main .img-artigo {
+.conteudo-principal .img-artigo {
     width: 250px;
     height: 190px;
     background-color: #8c52ff;
     border-radius: 12px;
 }
 
-main .conteudo-artigo {
-    width: 700px;
+.conteudo-principal .conteudo-artigo {
+    max-width: 930px;
     overflow-wrap: break-word;
 }
 
-main .conteudo-artigo p {
+.conteudo-principal .conteudo-artigo p {
     margin-top: 5px;
     font-family: 'Arapey', sans-serif;
 }
@@ -368,35 +344,34 @@ main .conteudo-artigo p {
 .sobre-cybersafe .container {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    max-width: 64%;
-    padding: 20px;
+    gap: 40px;
+    padding: 40px;
+    align-items: center;
 }
+
 
 .sobre-cybersafe h2, h3, ul, li, strong, p {
     font-family: 'Arapey', sans-serif;
     font-size: 18px;
-        letter-spacing: 0.3px;
+    letter-spacing: 0.3px;
+    max-width: 1200px;
 }
 
-.sobre-cybersafe li {
-    list-style:circle;
-    margin: auto 40px;
+.sobre-cybersafe strong {
+    color: #8c52ff;
+    font-weight: 600;
 }
 
 .sobre-cybersafe h2 {
-    display: flex;
-    justify-content: center;
-    margin: 40px auto;
-    font-size: 22px;
+    font-size: 25px;
+    margin: 20px 0 30px;
 }
-
 
 /* FOOTER */
 
 footer {
     color: #ffffff;
-    margin-top: 13%;
+    margin-top: 20px;
 }
 
 footer .container {
@@ -404,7 +379,7 @@ footer .container {
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    padding: 40px;
+    padding: 30px;
 }
 
 footer .contato {
@@ -433,55 +408,108 @@ footer .copyrights a:hover,
         display: none;
     }
 
+    header .container {
+        flex-direction: row;
+    }   
+
+    header .logo {
+        order: 3;
+    }
+
     header .menuMobile {
         display: flex;
+        order: 1;
     }
 
-    /* home */
-
-    main .container {
-        max-width: 10%;
+    header .img-perfil {
+        filter: brightness(0) saturate(100%) invert(1);
+        width: 20px;
+        height: 35px;
+        cursor: pointer;
+        order: 2;
     }
 
-    main .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px; 
-    padding-top: 40px;
+    .linha-header {
+        width: 100%;
     }
 
-    main .artigo {
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    align-items: center;
-    }
+    /* Pagina Principal */
 
-    main .conteudo-artigo {
-        max-width: 100px;
-    }
-    main .container {
-        display: flex;
+    .hero .container {
         flex-direction: column;
         align-items: center;
-        gap: 40px; 
-        padding-top: 40px;
+        padding: 20px;
+        gap: 20px;
     }
 
-    main .conteudo-artigo {
-        width: 700px;
-        overflow-wrap: break-word;
+    .hero .noticia {
+        width: 100%;
+        height: 250px;
+
     }
 
-    main .conteudo-artigo p {
-        margin-top: 5px;
-        font-family: 'Arapey', sans-serif;
+    .hero .noticia a {
+        font-size: 16px;
+        bottom: 30px;
+        left: 20px;
+        width: 90%;
     }
 
-    main .conteudo-artigo p {
-        margin-top: 5px;
-        font-family: 'Arapey', sans-serif;
+    .hero .seta {
+        width: 35px;
+        height: 35px;
+        font-size: 24px;
+    }
+
+    /* Barrarinhas que conta paginas */
+
+    .hero .indicadores-tracos {
+        display: flex;
+        gap: 3px;
+        margin-bottom: 20px;
+    }
+
+    .hero .indicadores-tracos .traco {
+        width: 20px;
+        height: 4px;
+        background-color: #555;
+        border-radius: 2px;
+    }
+
+    .hero .indicadores-tracos .traco.ativo {
+        background-color: #999;
+    }
+
+    .hero .noticia-lateral {
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+        width: 110%;
+    }
+
+    .hero .noticia-pequena {
+        width: 90%;
+        height: 90px;
+    }
+
+    .hero .noticia-lateral a {
+        font-size: 14px;
+        bottom: 20px;
+        width: 70%;
+    }
+
+    .conteudo-principal .conteudo-artigo {
+        width: 90%;
+    }
+
+    .conteudo-principal .conteudo-artigo h1, p {
+        font-size: 13px;
+        letter-spacing: 0.3px;
+    }
+
+    .conteudo-principal .img-artigo {
+        width: 50%;
+        height: 140px;
     }
 
     /* Cursos */
