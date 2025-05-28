@@ -11,7 +11,7 @@
 }
 
 body {
-    font-family: 'Arapey', sans-serif;;
+    font-family: 'Arapey', serif;
     font-size: 15px;
     background-color: #101728;
     color: #fff;
@@ -294,7 +294,7 @@ header .img-perfil {
 
 .conteudo-principal .conteudo-artigo p {
     margin-top: 5px;
-    font-family: 'Arapey', sans-serif;
+    font-family: 'Arapey', serif;
 }
 
 /* Pagina Cursos */
@@ -370,7 +370,7 @@ header .img-perfil {
 }
 
 .lista-servicos li{
-    font-family: 'Arapey', sans-serif;
+    font-family: 'Arapey', serif;
 }
 
 .lista-servicos .descricao {
@@ -409,7 +409,7 @@ header .img-perfil {
 
 
 .sobre-cybersafe h2, h3, ul, li, strong, p {
-    font-family: 'Arapey', sans-serif;
+    font-family: 'Arapey', serif;
     font-size: 18px;
     letter-spacing: 0.3px;
     max-width: 1200px;
