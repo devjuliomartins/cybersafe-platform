@@ -66,23 +66,71 @@ header nav li a:hover {
     color: #8c52ff;
 }
 
-header .menuMobile {
-    display: none;
+/* Menu hamburguer */
+
+header .menuMobile, .menu-mobile {
+  display: none;
 }
 
+/* Ícone hamburguer */
 header .menu-icon {
     display: flex;
     flex-direction: column;
-    gap: 3px;
+    gap: 5px;
     cursor: pointer;
 }
 
 header .menu-icon div {
-    width: 30px;
-    height: 6px;
+    width: 28px;
+    height: 5px;
     background-color: #fff;
-    border-radius: 2px;
+    border-radius: 12px;
 }
+
+/* Menu dropdown */
+header .menu-mobile {
+    position: absolute;
+    top: 9px;
+    left: 2px;
+    background-color: #242425;
+    padding: 15px;
+    border-radius: 5px;
+    z-index: 1000;
+    opacity: 0.9;
+}
+
+header .menu-mobile ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 280px;
+}
+
+header .menu-mobile ul li {
+    padding: 16px 0;
+}
+
+header .menu-mobile ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+header .menu-mobile img {
+    width: 35px;
+    margin: 10px auto;
+    display: block;
+}
+
+.menu-mobile .img-menu {
+    width: 35px;
+    height: 30px;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+/*  */
 
 header .img-perfil {
     filter: brightness(0) saturate(100%) invert(1);
@@ -423,10 +471,29 @@ footer .copyrights a:hover,
         order: 2;
     }
 
-    header .menuMobile {
+    /* Menu hamburguer */
+
+     header .menuMobile {
         display: flex;
-        order: 1;
+        flex-direction: column;
+        align-items: flex-start;
     }
+
+     header .menu-mobile {
+        display: none;
+    }
+
+     header .menu-mobile.show {
+        display: block;
+    }
+
+    header .menu-mobile ul li a:hover {
+        color: #8c52ff;
+
+}
+
+
+    /*  */
 
     header .img-perfil {
         display: flex;
