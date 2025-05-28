@@ -70,9 +70,15 @@ header .menuMobile {
     display: none;
 }
 
+header .menu-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    cursor: pointer;
+}
 
 header .menu-icon div {
-    width: 20px;
+    width: 30px;
     height: 6px;
     background-color: #fff;
     border-radius: 2px;
@@ -410,11 +416,11 @@ footer .copyrights a:hover,
     }
 
     header .container {
-        flex-direction: row;
-    }   
+        justify-content: space-between;
+    }  
 
     header .logo {
-        order: 3;
+        order: 2;
     }
 
     header .menuMobile {
@@ -423,11 +429,12 @@ footer .copyrights a:hover,
     }
 
     header .img-perfil {
+        display: flex;
         filter: brightness(0) saturate(100%) invert(1);
         width: 20px;
         height: 35px;
         cursor: pointer;
-        order: 2;
+        order: 3;
     }
 
     .linha-header {
@@ -515,16 +522,30 @@ footer .copyrights a:hover,
 
     /* Cursos */
 
+    .lista-cursos .curso {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
     .lista-cursos .curso a {
-        width: 40%;
-        flex-grow: 1;
-        max-width: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 150px;
+        height: 250px;
+        text-align: center;
     }
 
     /* Servicos */
 
     .lista-servicos .button-servico {
-        width: 100%;
+        width: 90%;
+    }
+
+    .lista-servicos .button-servico {
+        width: 50%;
     }
 
     /* Linha separadora */
@@ -537,6 +558,15 @@ footer .copyrights a:hover,
 
     .sobre-cybersafe .container {
         max-width: 90%;
+    }
+
+    .sobre-cybersafe h2 {
+        font-size: 19px;
+        margin: 10px;
+    }
+
+    .sobre-cybersafe h3, ul, li, strong, p {
+        font-size: 16px;
     }
 
     /* Footer */
