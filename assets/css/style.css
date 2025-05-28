@@ -90,7 +90,7 @@ header .menu-icon div {
 /* Menu dropdown */
 header .menu-mobile {
     position: absolute;
-    top: 9px;
+    top: 7px;
     left: 2px;
     background-color: #242425;
     padding: 15px;
@@ -103,7 +103,7 @@ header .menu-mobile ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    height: 280px;
+    height: 270px;
 }
 
 header .menu-mobile ul li {
@@ -114,15 +114,18 @@ header .menu-mobile ul li a {
     color: white;
     text-decoration: none;
     font-size: 20px;
+    padding: 0;
+    margin: 0;
 }
 
 header .menu-mobile img {
-    width: 35px;
-    margin: 10px auto;
+    width: 32px;
+    margin: 0 auto;
+    padding: 0 0 8px;
     display: block;
 }
 
-.menu-mobile .img-menu {
+header .menu-mobile .img-menu {
     width: 35px;
     height: 30px;
     display: block;
@@ -168,7 +171,7 @@ header .img-perfil {
 }
 
 .hero .noticia a {
-    font-size: 27px;
+    font-size: 25px;
     color: #fff;
     position: absolute;
     bottom: 40px;
@@ -212,7 +215,6 @@ header .img-perfil {
 .hero .indicadores-tracos {
     display: none;
 }
-
 
 /*  */
 
@@ -265,10 +267,10 @@ header .img-perfil {
 .conteudo-principal .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 40px; 
-    padding-top: 20px;
-    
+    padding: 20px 20px 0 0px;
+    max-width: 1220px;
+    width: 90%;
 }
 
 .conteudo-principal .artigo {
@@ -278,14 +280,15 @@ header .img-perfil {
 }
 
 .conteudo-principal .img-artigo {
-    width: 250px;
+    width: 100%;
+    max-width: 250px;
     height: 190px;
     background-color: #8c52ff;
     border-radius: 12px;
 }
 
 .conteudo-principal .conteudo-artigo {
-    max-width: 930px;
+    max-width: 1200px;
     overflow-wrap: break-word;
 }
 
@@ -489,9 +492,7 @@ footer .copyrights a:hover,
 
     header .menu-mobile ul li a:hover {
         color: #8c52ff;
-
-}
-
+    }
 
     /*  */
 
@@ -520,7 +521,6 @@ footer .copyrights a:hover,
     .hero .noticia {
         width: 100%;
         height: 250px;
-
     }
 
     .hero .noticia a {
@@ -577,6 +577,10 @@ footer .copyrights a:hover,
         width: 90%;
     }
 
+     .conteudo-principal .artigo {
+        gap: 20px;
+    }
+
     .conteudo-principal .conteudo-artigo h1, p {
         font-size: 13px;
         letter-spacing: 0.3px;
@@ -593,15 +597,14 @@ footer .copyrights a:hover,
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 40px;
     }
 
     .lista-cursos .curso a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 150px;
-        height: 250px;
+        width: 175px;
+        height: 245px;
         text-align: center;
     }
 
@@ -609,10 +612,6 @@ footer .copyrights a:hover,
 
     .lista-servicos .button-servico {
         width: 90%;
-    }
-
-    .lista-servicos .button-servico {
-        width: 50%;
     }
 
     /* Linha separadora */
@@ -623,13 +622,9 @@ footer .copyrights a:hover,
 
     /* Sobre */
 
-    .sobre-cybersafe .container {
-        max-width: 90%;
-    }
-
     .sobre-cybersafe h2 {
         font-size: 19px;
-        margin: 10px;
+        margin: 1px;
     }
 
     .sobre-cybersafe h3, ul, li, strong, p {
