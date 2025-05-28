@@ -597,7 +597,7 @@ footer .copyrights a:hover,
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 40px;
+        gap: 27px;
     }
 
     .lista-cursos .curso a {
