@@ -268,9 +268,8 @@ header .img-perfil {
     display: flex;
     flex-direction: column;
     gap: 40px; 
-    padding: 20px 20px 0 0px;
-    max-width: 1220px;
-    width: 90%;
+    padding: 20px;
+    max-width: 1200px;
 }
 
 .conteudo-principal .artigo {
@@ -281,7 +280,7 @@ header .img-perfil {
 
 .conteudo-principal .img-artigo {
     width: 100%;
-    max-width: 250px;
+    max-width: 200px;
     height: 190px;
     background-color: #8c52ff;
     border-radius: 12px;
@@ -503,6 +502,7 @@ footer .copyrights a:hover,
         height: 35px;
         cursor: pointer;
         order: 3;
+        margin: 15px;
     }
 
     .linha-header {
