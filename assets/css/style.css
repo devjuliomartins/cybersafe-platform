@@ -597,14 +597,15 @@ footer .copyrights a:hover,
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        gap: 20px;
     }
 
     .lista-cursos .curso a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 175px;
-        height: 245px;
+        width: 160px;
+        height: 230px;
         text-align: center;
     }
 
