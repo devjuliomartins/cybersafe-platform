@@ -85,15 +85,17 @@ header .menu-icon div {
     height: 5px;
     background-color: #fff;
     border-radius: 12px;
+    transition: all 0.3s ease;
+    z-index: 1000;
 }
 
 /* Menu dropdown */
 header .menu-mobile {
     position: absolute;
     top: 7px;
-    left: 2px;
+    left: 0px;
     background-color: #242425;
-    padding: 15px;
+    padding: 60px 0;
     border-radius: 5px;
     z-index: 1000;
     opacity: 0.9;
@@ -103,7 +105,7 @@ header .menu-mobile ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    height: 270px;
+    height: 220px;
 }
 
 header .menu-mobile ul li {
@@ -119,18 +121,28 @@ header .menu-mobile ul li a {
 }
 
 header .menu-mobile img {
-    width: 32px;
-    margin: 0 auto;
-    padding: 0 0 8px;
+    width: 35px;
+    margin: auto;
+    padding-top: 50px;
     display: block;
+    margin-bottom: -30px;
 }
 
-header .menu-mobile .img-menu {
-    width: 35px;
-    height: 30px;
-    display: block;
-    margin: 0;
-    padding: 0;
+/* funcao nova do menu hamburguer */
+header .menu-icon.active div:nth-child(1) {
+    transform: translateY(0) rotate(0);
+    width: 28px;
+}
+
+header .menu-icon.active div:nth-child(2) {
+    transform: translateX(6px);
+    width: 28px;
+}
+
+header .menu-icon.active div:nth-child(3) {
+    transform: translateY(0) rotate(0);
+    width: 28px;
+
 }
 
 /*  */
@@ -526,16 +538,16 @@ footer .copyrights a:hover,
     }
 
     .hero .noticia a {
-        font-size: 16px;
-        bottom: 30px;
-        left: 20px;
-        width: 90%;
+        font-size: 15px;
+        bottom: 20px;
+        left: 50px;
+        width: 70%;
     }
 
     .hero .seta {
         width: 35px;
         height: 35px;
-        font-size: 24px;
+        font-size: 20px;
     }
 
     /* Barrarinhas que conta paginas */
@@ -590,11 +602,12 @@ footer .copyrights a:hover,
 
     .conteudo-principal .conteudo-artigo p {
         font-size: 12px;
+        text-align: start;
     }
 
     .conteudo-principal .img-artigo {
         width: 50%;
-        height: 140px;
+        height: 120px;
     }
 
     /* Cursos */
@@ -612,7 +625,15 @@ footer .copyrights a:hover,
 
     /* Servicos */
 
-    .lista-servicos .button-servico {
+    .lista-servicos .servico {
+        text-align: center;
+    }
+
+    .lista-servicos .servico .descricao {
+        text-align: start;
+    }
+
+    .lista-servicos .servico .button-servico {
         width: 90%;
     }
 
@@ -642,8 +663,12 @@ footer .copyrights a:hover,
         font-size: 16px;
         letter-spacing: 0.4px;
     }
+    
+    .sobre-cybersafe ul li {
+        margin-bottom: 10px;
+    }
 
-     .sobre-cybersafe h3, p {
+    .sobre-cybersafe h3, p {
         text-align: center;
     }
 
