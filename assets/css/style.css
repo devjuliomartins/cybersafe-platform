@@ -357,7 +357,7 @@ header .img-perfil {
     flex-direction: column;
     padding: 20px;
     justify-content: center;
-    max-width: 1255px;
+    max-width: 1200px;
 }
 
 .lista-servicos .linha-separadora {
@@ -428,7 +428,6 @@ header .img-perfil {
 
 footer {
     color: #ffffff;
-    margin-top: 40px;
 }
 
 footer .container {
@@ -467,6 +466,9 @@ footer .copyrights a:hover,
 
     header .container {
         justify-content: space-between;
+        display: flex;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }  
 
     header .logo {
@@ -582,8 +584,12 @@ footer .copyrights a:hover,
     }
 
     .conteudo-principal .conteudo-artigo h1, p {
-        font-size: 13px;
+        font-size: 12px;
         letter-spacing: 0.3px;
+    }
+
+    .conteudo-principal .conteudo-artigo p {
+        font-size: 12px;
     }
 
     .conteudo-principal .img-artigo {
@@ -594,25 +600,29 @@ footer .copyrights a:hover,
     /* Cursos */
 
     .lista-cursos .curso {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 27px;
+        gap: 20px;
+        justify-content: space-around;
     }
-
+    
     .lista-cursos .curso a {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 140px;
-        height: 210px;
-        text-align: center;
+        width: calc(50% - 20px);
+        max-width: 150px;
+        height: 240px;
     }
 
     /* Servicos */
 
     .lista-servicos .button-servico {
         width: 90%;
+    }
+
+    .lista-servicos .linha-separadora h2 {
+        font-size: 14px;
+    }
+
+    .lista-servicos .linha-separadora {
+        flex: 1;
+        gap: 25px;
     }
 
     /* Linha separadora */
@@ -625,16 +635,30 @@ footer .copyrights a:hover,
 
     .sobre-cybersafe h2 {
         font-size: 19px;
-        margin: 1px;
+        margin: 0;
     }
 
     .sobre-cybersafe h3, ul, li, strong, p {
         font-size: 16px;
+        letter-spacing: 0.4px;
+    }
+
+     .sobre-cybersafe h3, p {
+        text-align: center;
     }
 
     /* Footer */
 
     footer .container {
         text-align: center;
+        padding: 15px;
+    }
+
+    footer .contato {
+        font-size: 9px;
+    }
+
+    footer .copyrights {
+        font-size: 8px;
     }
 }
